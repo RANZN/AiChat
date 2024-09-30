@@ -10,7 +10,7 @@ import com.ranjan.aichat.util.speechrecognizer.SpeechResponse
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
-open class SpeechRepoImpl(private val speechRecognizer: SpeechRecognizer) : SpeechRepo {
+class SpeechRepoImpl(private val speechRecognizer: SpeechRecognizer) : SpeechRepo {
 
     private val _speechResult = MutableStateFlow(SpeechResponse(SpeechEnum.NONE))
     override val speechResult = _speechResult.asStateFlow()

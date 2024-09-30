@@ -10,6 +10,8 @@ activityCompose = "1.9.2"
 composeBom = "2024.09.02"
 koin = "4.0.0"
 extended-icon-ver = "1.7.2"
+mockito-version = "4.4.0"
+test-coroutines = "1.8.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -28,6 +30,9 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 koin = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
 extended-icons = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "extended-icon-ver" }
+mockito-inline = {group = "org.mockito", name = "mockito-inline", version.ref = "mockito-version"}
+mockito-core = {group = "org.mockito", name = "mockito-core", version.ref ="mockito-version"}
+kotlinx-coroutines-test = {group ="org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "test-coroutines"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

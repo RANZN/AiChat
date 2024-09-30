@@ -59,4 +59,9 @@ dependencies {
 
     implementation(libs.koin)
     implementation(libs.extended.icons)
+
+//    testImplementation(libs.mockito.inline)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.kotlinx.coroutines.test)
+
 }

@@ -20,6 +20,10 @@ class BotRepoImpl : BotRepo {
     )
 
     override fun getBotResponse(message: String): Flow<String> = flow {
+        if(message.isEmpty()) {
+            emit("Sorry we didn't get you please pardon")
+            return@flow
+        }
         delay(1.seconds)
         val pos = if (returnResponsePos < dummyResponseList.size) returnResponsePos++ else dummyResponseList.lastIndex
         emit(dummyResponseList[pos])
